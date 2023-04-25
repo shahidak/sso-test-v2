@@ -1,0 +1,14 @@
+extends layout
+
+block content
+	h1 Profile
+
+	dl
+		dt Display name
+		dd #{user.displayName}
+		dt Email
+		dd #{user.email}
+		dt SessionIndex
+		dd #{user.sessionIndex}
+
+	a(href="/logout") Logout
